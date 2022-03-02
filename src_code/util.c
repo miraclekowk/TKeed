@@ -87,7 +87,7 @@ int socket_bind_listen(int port){
         return -1;
     }
 
-    // 设置服务器IP和Port，和监听描述副绑定
+    // 设置服务器IP和Port，和监听描述符绑定
     struct sockaddr_in server_addr;
     bzero((char*)&server_addr, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
